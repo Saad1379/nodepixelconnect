@@ -6,7 +6,7 @@ const port = process.env.PORT || APP_PORT;
 
 
 app.get('/', (req,res)=>{
-    res.send(`App started on port ${port}`)
+    res.sendFile(__dirname+"/index.html")
 });
 
 
